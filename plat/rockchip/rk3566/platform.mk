@@ -78,7 +78,7 @@ $(eval $(call add_define,PLAT_EXTRA_LD_SCRIPT))
 # Enable workarounds for selected Cortex-A53 erratas.
 #ERRATA_A53_855873	:=	1
 HW_ASSISTED_COHERENCY := 1
-
+USE_COHERENT_MEM := 0
 # M0 source build
 PLAT_M0                 :=      ${PLAT}m0
 BUILD_M0		:=	${BUILD_PLAT}/m0
