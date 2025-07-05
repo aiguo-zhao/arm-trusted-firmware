@@ -76,7 +76,8 @@ include lib/libfdt/libfdt.mk
 $(eval $(call add_define,PLAT_EXTRA_LD_SCRIPT))
 
 # Enable workarounds for selected Cortex-A53 erratas.
-ERRATA_A53_855873	:=	1
+#ERRATA_A53_855873	:=	1
+HW_ASSISTED_COHERENCY := 1
 
 # M0 source build
 PLAT_M0                 :=      ${PLAT}m0
